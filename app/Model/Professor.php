@@ -5,7 +5,7 @@ namespace App\Model;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Cidade extends Model
+class Professor extends Model
 {
     //
     use SoftDeletes;
@@ -14,10 +14,10 @@ class Cidade extends Model
         'nome'
     ];
 
-    protected $table = 'cidades';
+    protected $table = 'professores';
 
-    public function cursos()
+    public function professores()
     {
-        return $this->hasMany('App\Model\Curso','cidade_id');
+        return $this->hasMany('App\Model\Disciplina','disciplina_id');
     }
 }
