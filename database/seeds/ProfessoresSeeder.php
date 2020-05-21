@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class CidadesSeeder extends Seeder
+class ProfessoresSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,13 +12,13 @@ class CidadesSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('cidades')
+        DB::table('professores')
             ->insert([
                 [
-                    'nome'=>'Videira - SC'
+                    'nome'=>'José da Silva'
                 ],
                 [
-                    'nome'=>'Fraiburgo - SC'
+                    'nome'=>'João dos Santos'
                 ],
             ]                
             );
