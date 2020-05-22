@@ -1,7 +1,9 @@
 <?php
 
-use App\Model\Disciplina;
 use Illuminate\Database\Seeder;
+use App\Model\Disciplina;
+use App\Model\Professor;
+
 
 class DisciplinaSeeder extends Seeder
 {
